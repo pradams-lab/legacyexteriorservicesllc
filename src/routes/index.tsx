@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: DESCRIPTION },
       {
         property: "og:title",
-        content: "Legacy Exterior Services LLC | Exterior Cleaning & Wood Staining in DFW",
+        content: "Legacy Exterior Services LLC | Fence Staining & Pressure Washing DFW",
       },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:image", content: `https://legacyexteriorservices.com${heroImg.url}` },

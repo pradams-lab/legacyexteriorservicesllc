@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Legacy Exterior Services LLC | DFW Exterior Cleaning & Wood Staining" },
+      { title: "Legacy Exterior Services LLC | Fence Staining & Pressure Washing DFW" },
       {
         name: "description",
         content:
@@ -86,6 +86,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Legacy Exterior Services LLC" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Legacy Exterior Services LLC | Fence Staining & Pressure Washing DFW" },
+      { name: "twitter:title", content: "Legacy Exterior Services LLC | Fence Staining & Pressure Washing DFW" },
+      { property: "og:description", content: "Fence & deck staining, pressure washing, and house soft-washing across the Dallas-Fort Worth metroplex." },
+      { name: "twitter:description", content: "Fence & deck staining, pressure washing, and house soft-washing across the Dallas-Fort Worth metroplex." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/9a9aa907-5611-4c05-b492-902f916718c0" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/9a9aa907-5611-4c05-b492-902f916718c0" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -98,7 +104,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
