@@ -113,7 +113,7 @@ function Index() {
             body="Protecting your property, landscaping, and outdoor structures on every project."
           />
           <TrustItem
-            icon={<StarRating rating={RATING} size="size-4" />}
+            icon={<StarRating rating={RATING} size="size-3.5" className="gap-0" />}
             title="Top-Rated Local Service"
             body={`Backed by ${RATING}-star local homeowner reviews across the metroplex.`}
             link={GOOGLE_PROFILE_URL}
