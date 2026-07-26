@@ -221,7 +221,7 @@ function TrustItem({
 }) {
   const content = (
     <>
-      <span className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-accent">
+      <span className="mt-0.5 flex size-10 shrink-0 flex-wrap content-center items-center justify-center gap-0 rounded-xl bg-secondary p-1 text-accent">
         {icon}
       </span>
       <span>
