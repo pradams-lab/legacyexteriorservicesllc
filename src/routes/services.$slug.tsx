@@ -3,7 +3,7 @@ import { ArrowLeft, AlertTriangle, Check } from "lucide-react";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ConversionBlock } from "@/components/site/ConversionBlock";
-import { getService, services } from "@/lib/site-data";
+import { getService, services, type ServicePoint } from "@/lib/site-data";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
@@ -54,7 +54,7 @@ function ServicePage() {
         <section className="mt-10">
           <h2 className="text-2xl font-bold">The Core Problem</h2>
           <div className="mt-5 space-y-4">
-            {service.problem.map((p) => (
+            {service.problem.map((p: ServicePoint) => (
               <div key={p.title} className="flex gap-3 rounded-2xl border border-border bg-card p-5 shadow-soft">
                 <AlertTriangle className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden />
                 <div>
@@ -69,7 +69,7 @@ function ServicePage() {
         <section className="mt-10">
           <h2 className="text-2xl font-bold">Our Professional Solution</h2>
           <div className="mt-5 space-y-4">
-            {service.solution.map((p) => (
+            {service.solution.map((p: ServicePoint) => (
               <div key={p.title} className="flex gap-3 rounded-2xl border border-border bg-card p-5 shadow-soft">
                 <Check className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden />
                 <div>
