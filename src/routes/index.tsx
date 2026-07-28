@@ -17,7 +17,7 @@ import { IMAGES } from "@/lib/images";
 
 const heroImg = IMAGES.heroFenceDriveway;
 const stainingImg = IMAGES.fenceStaining;
-const baPool = IMAGES.woodRestoration;
+const baPool = IMAGES.fenceStaining;
 const baPatio = IMAGES.cleanConcreteDriveway;
 const washingImg = IMAGES.pressureWashing;
 
@@ -34,8 +34,6 @@ export const Route = createFileRoute("/")({
         content: "Legacy Exterior Services LLC | Fence Staining & Pressure Washing DFW",
       },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:image", content: heroImg },
-      { name: "twitter:image", content: heroImg },
     ],
   }),
   component: Index,
