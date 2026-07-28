@@ -171,22 +171,22 @@ function Index() {
 
           <div className="mt-9 grid gap-5 md:grid-cols-2">
             <BeforeAfterCard
-              src={baPool}
-              alt="Before and after of a backyard pool fence, weathered gray then richly stained"
+              src={stainingImg}
+              alt="Cedar fence panels being stained, weathered gray next to rich brown stain"
               title="Weathered Gray Fence ➡ Rich Stained Wood Finish"
-              caption="Full restoration wash and semi-transparent stain on a backyard pool fence."
+              caption="Full restoration wash and semi-transparent stain on a backyard fence."
             />
             <BeforeAfterCard
               src={baPatio}
-              alt="Before and after of a stone patio and concrete walkway, dirty then clean"
+              alt="Bright, freshly cleaned concrete driveway in front of a suburban brick home"
               title="Dirty Concrete Surface ➡ Clean, Bright Walkway"
               caption="Surface-cleaned concrete and stonework with even, stripe-free results."
             />
             <BeforeAfterCard
               src={washingImg}
-              alt="Fence showing stained section next to bare untreated wood"
-              title="Stained Outdoor Wood ➡ Protected, Polished Finish"
-              caption="The difference proper prep and a sealed finish makes, panel by panel."
+              alt="Pressure washer cutting a clean stripe through a grimy concrete driveway"
+              title="Grimy Concrete ➡ Stripe-Free Clean"
+              caption="Commercial surface cleaners lift oil, algae, and years of built-up grime."
             />
             <BeforeAfterCard
               src={heroImg}
