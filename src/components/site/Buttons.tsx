@@ -15,13 +15,15 @@ export function CallButton({
     <a
       href={PHONE_HREF}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-5 font-semibold text-accent-foreground shadow-soft transition-colors hover:bg-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
-        compact ? "h-11 text-sm" : "h-13 py-3.5 text-base",
+        "inline-flex items-center justify-center rounded-xl bg-accent font-semibold text-accent-foreground shadow-soft transition-colors hover:bg-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+        compact
+          ? "h-11 gap-2 px-5 text-sm"
+          : "gap-2 py-3.5 text-base sm:h-14 sm:min-w-[260px] sm:gap-2.5 sm:px-6 sm:whitespace-nowrap",
         className,
       )}
     >
       <Phone className="size-4 shrink-0" aria-hidden />
-      <span>{label ?? `Call Now: ${PHONE_DISPLAY}`}</span>
+      <span className="sm:tracking-tight">{label ?? `Call Now: ${PHONE_DISPLAY}`}</span>
     </a>
   );
 }
