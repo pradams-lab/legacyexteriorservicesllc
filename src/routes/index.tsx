@@ -77,15 +77,17 @@ function Index() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lift">
               <img
-                src={baPool}
-                alt="Before and after: weathered gray backyard fence restored to a rich stained wood finish"
+                src={heroImg}
+                alt="Freshly stained wooden privacy fence beside a clean concrete driveway at a DFW home"
+                width={1600}
+                height={1000}
                 className="aspect-[16/10] w-full object-cover"
               />
             </div>
             <div className="mt-4 grid grid-cols-2 gap-4">
               <img
-                src={heroImg}
-                alt="Freshly stained wooden fence beside a clean residential driveway in DFW"
+                src={washingImg}
+                alt="Pressure washing a concrete driveway, showing a bright clean stripe"
                 loading="lazy"
                 className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-soft"
               />
