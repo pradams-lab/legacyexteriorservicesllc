@@ -13,10 +13,13 @@ import {
   SERVICE_AREAS,
 } from "@/lib/site-data";
 
-import heroImg from "@/assets/hero-fence-driveway.jpg.asset.json";
-import stainingImg from "@/assets/fence-staining.jpg.asset.json";
-import baPool from "@/assets/ba-pool-fence.jpg.asset.json";
-import baPatio from "@/assets/ba-patio-stone.jpg.asset.json";
+import { IMAGES } from "@/lib/images";
+
+const heroImg = IMAGES.heroFenceDriveway;
+const stainingImg = IMAGES.fenceStaining;
+const baPool = IMAGES.fenceStaining;
+const baPatio = IMAGES.cleanConcreteDriveway;
+const washingImg = IMAGES.pressureWashing;
 
 const DESCRIPTION =
   "Fence & deck staining, pressure washing, and house soft-washing across Dallas, Plano, Frisco, Allen & McKinney. Fully insured. Call (214) 205-4075 for a free quote.";
@@ -31,8 +34,6 @@ export const Route = createFileRoute("/")({
         content: "Legacy Exterior Services LLC | Fence Staining & Pressure Washing DFW",
       },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:image", content: `https://legacyexteriorservices.com${heroImg.url}` },
-      { name: "twitter:image", content: `https://legacyexteriorservices.com${heroImg.url}` },
     ],
   }),
   component: Index,
@@ -76,20 +77,22 @@ function Index() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lift">
               <img
-                src={baPool.url}
-                alt="Before and after: weathered gray backyard fence restored to a rich stained wood finish"
-                className="w-full object-cover"
+                src={heroImg}
+                alt="Freshly stained wooden privacy fence beside a clean concrete driveway at a DFW home"
+                width={1600}
+                height={1000}
+                className="aspect-[16/10] w-full object-cover"
               />
             </div>
             <div className="mt-4 grid grid-cols-2 gap-4">
               <img
-                src={heroImg.url}
-                alt="Freshly stained wooden fence beside a clean residential driveway in DFW"
+                src={washingImg}
+                alt="Pressure washing a concrete driveway, showing a bright clean stripe"
                 loading="lazy"
                 className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-soft"
               />
               <img
-                src={stainingImg.url}
+                src={stainingImg}
                 alt="Fence mid-project showing the contrast between stained and unstained wood"
                 loading="lazy"
                 className="aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-soft"
@@ -168,25 +171,25 @@ function Index() {
 
           <div className="mt-9 grid gap-5 md:grid-cols-2">
             <BeforeAfterCard
-              src={baPool.url}
-              alt="Before and after of a backyard pool fence, weathered gray then richly stained"
+              src={stainingImg}
+              alt="Cedar fence panels being stained, weathered gray next to rich brown stain"
               title="Weathered Gray Fence ➡ Rich Stained Wood Finish"
-              caption="Full restoration wash and semi-transparent stain on a backyard pool fence."
+              caption="Full restoration wash and semi-transparent stain on a backyard fence."
             />
             <BeforeAfterCard
-              src={baPatio.url}
-              alt="Before and after of a stone patio and concrete walkway, dirty then clean"
+              src={baPatio}
+              alt="Bright, freshly cleaned concrete driveway in front of a suburban brick home"
               title="Dirty Concrete Surface ➡ Clean, Bright Walkway"
               caption="Surface-cleaned concrete and stonework with even, stripe-free results."
             />
             <BeforeAfterCard
-              src={stainingImg.url}
-              alt="Fence showing stained section next to bare untreated wood"
-              title="Stained Outdoor Wood ➡ Protected, Polished Finish"
-              caption="The difference proper prep and a sealed finish makes, panel by panel."
+              src={washingImg}
+              alt="Pressure washer cutting a clean stripe through a grimy concrete driveway"
+              title="Grimy Concrete ➡ Stripe-Free Clean"
+              caption="Commercial surface cleaners lift oil, algae, and years of built-up grime."
             />
             <BeforeAfterCard
-              src={heroImg.url}
+              src={heroImg}
               alt="Clean driveway alongside a freshly stained privacy fence"
               title="Neglected Exterior ➡ Curb-Appeal Ready"
               caption="Fence staining paired with a full driveway and walkway wash."

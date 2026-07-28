@@ -5,7 +5,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ConversionBlock } from "@/components/site/ConversionBlock";
 import { StarRating } from "@/components/site/StarRating";
 import { RATING, REVIEW_COUNT, GOOGLE_PROFILE_URL } from "@/lib/site-data";
-import stainingImg from "@/assets/fence-staining.jpg.asset.json";
+import { IMAGES } from "@/lib/images";
 
 const DESCRIPTION =
   "Legacy Exterior Services LLC is rooted in the DFW community, raising the standard of exterior property care through meticulous prep work and superior execution.";
@@ -69,7 +69,7 @@ function AboutPage() {
         </p>
 
         <img
-          src={stainingImg.url}
+          src={IMAGES.fenceStaining}
           alt="Legacy Exterior Services staining a residential wood fence in DFW"
           loading="lazy"
           className="mt-8 aspect-[16/10] w-full rounded-2xl border border-border object-cover shadow-soft"
