@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/legacy-logo.png.asset.json";
+import logo from "@/assets/legacy-logo.png";
 import {
   BUSINESS_NAME,
   PHONE_DISPLAY,
@@ -13,7 +13,13 @@ export function Footer() {
     <footer className="border-t border-border bg-card px-4 pb-28 pt-14 sm:px-6 sm:pb-14">
       <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 lg:col-span-1">
-          <img src={logo.url} alt={`${BUSINESS_NAME} logo`} className="h-14 w-auto" />
+          <img
+            src={logo}
+            alt={`${BUSINESS_NAME} logo`}
+            width={1024}
+            height={559}
+            className="h-14 w-auto max-w-[240px] object-contain"
+          />
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Exterior cleaning, wood staining, and restoration for homeowners across the
             Dallas–Fort Worth metroplex.
