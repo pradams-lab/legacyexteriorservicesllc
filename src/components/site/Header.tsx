@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/legacy-logo.png.asset.json";
+import logo from "@/assets/legacy-logo.png";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site-data";
 import { Phone } from "lucide-react";
 
@@ -9,9 +9,11 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:h-20 sm:px-6">
         <Link to="/" className="flex shrink-0 items-center" aria-label="Legacy Exterior Services LLC — home">
           <img
-            src={logo.url}
+            src={logo}
             alt="Legacy Exterior Services LLC logo"
-            className="h-11 w-auto sm:h-14"
+            width={1024}
+            height={559}
+            className="h-11 w-auto max-w-[190px] object-contain sm:h-14 sm:max-w-[240px]"
           />
         </Link>
 
